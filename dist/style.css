@@ -116,6 +116,10 @@ section {
     .controls .row:nth-child(even) .view {
       text-align: left; }
 
+.presentation a {
+  color: #eeeeee;
+  text-decoration: underline; }
+
 .team-member {
   text-align: center; }
   .team-member a {
