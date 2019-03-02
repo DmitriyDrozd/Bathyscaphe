@@ -1,0 +1,185 @@
+@import "variables";
+
+/**
+  Main styles
+ */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  background: $brand-white;
+  font-size: $font-size-base;
+  font-family: $hind;
+
+  a{
+    color: $main-black;
+    @include smooth(all);
+
+    &:hover{
+      color: $game-bg;
+    }
+  }
+
+  header{
+    color: $brand-white;
+
+    a {
+      color: $brand-white;
+    }
+  }
+
+  footer{
+    border-top: 1px solid $game-bg;
+    background: $main-black;
+    min-height: $header-bg-height;
+    padding: $huge-padding 0;
+
+    h2{
+      text-align: center;
+      color: $brand-white;
+      padding-bottom: $standard-padding;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper{
+  padding: 0 $wrapper-padding;
+  max-width: $wrapper-width;
+  margin: 0 auto;
+}
+
+.header{
+  padding-top: $header-padding;
+  background: linear-gradient(0deg, $brand-white $header-bg-height, $brand-primary $header-bg-height);
+  text-align: center;
+
+  h2 {
+    color: $main-black;
+    padding: $header-padding 0;
+    letter-spacing: 3px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.logo{
+  text-align: center;
+
+  h1{
+    text-transform: uppercase;
+  }
+
+  .logo-image{
+    width: $logo-width;
+    height: auto;
+  }
+}
+
+.carousel{
+  margin-bottom: $huge-padding;
+}
+
+section{
+  margin-bottom: $huge-padding;
+  text-align: center;
+}
+
+.section-title{
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: $section-underline-padding;
+  text-transform: uppercase;
+
+  span{
+    border-bottom: 1px solid $brand-primary;
+  }
+}
+
+.controls{
+  overflow: hidden;
+  
+  img{
+    height: $section-image-height;
+    width: $section-image-width;
+    max-width: 100%;
+  }
+
+  .keyboard{
+    border: 1px solid $game-bg;
+    padding: 0 $small-padding;
+  }
+
+  .view{
+    background: $game-bg;
+    padding: 0;
+  }
+
+  .determination{
+    color: $game-bg;
+    border-color: $game-bg;
+    text-transform: uppercase;
+    border-bottom: 1px solid $game-bg;
+    padding-bottom: $section-underline-padding;
+  }
+
+  .row{
+    margin-bottom: $section-margin;
+  }
+
+  .row:nth-child(odd){
+    text-align: left;
+
+    .view{
+      text-align: right;
+    }
+  }
+
+  .row:nth-child(even){
+    text-align: right;
+
+    .view{
+      text-align: left;
+    }
+  }
+}
+
+.presentation{
+  a{
+    color: $brand-white;
+    text-decoration: underline;
+  }
+}
+
+.team-member{
+  text-align: center;
+
+  a{
+    color: $game-bg;
+  }
+
+  img{
+    @include smooth();
+
+    &:hover{
+      filter: blur(2px) grayscale(20%);
+    }
+  }
+
+  .fixed{
+    width: 100%;
+    height: $footer-image-height;
+  }
+
+  .avatar{
+    border-radius: 50%;
+  }
+}

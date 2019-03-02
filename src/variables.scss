@@ -1,0 +1,53 @@
+/**
+  Colors
+ */
+$brand-primary: #4970fb;
+$brand-secondary: #35836B;
+$brand-white: #eeeeee;
+$brand-black: #464646;
+$game-bg: #6cbaa2;
+$main-black: #333333;
+
+/**
+  Sizes
+ */
+$font-size-base: 16px;
+$font-size-small: 14px;
+
+$wrapper-padding: 10%;
+$wrapper-width: 1366px;
+
+$small-padding: 5px;
+$standard-padding: 15px;
+$huge-padding: 30px;
+
+$header-bg-height: 146px;
+$header-padding: 15px;
+$logo-width: 128px;
+
+$section-underline-padding: 6px;
+$section-margin: 20px;
+$section-image-height: 250px;
+$section-image-width: auto;
+
+$footer-image-height: 100px;
+
+  /**
+    Fonts
+   */
+$hind: 'Hind', sans-serif;
+
+/**
+  Mixins
+ */
+@mixin hover-a($base){
+  color: darken($base, 30%);
+}
+
+@mixin smooth($target: all, $duration: 0.3s, $type: ease){
+  -webkit-transition: $target $duration $type;
+  -moz-transition: $target $duration $type;
+  -o-transition: $target $duration $type;
+  -ms-transition: $target $duration $type;
+  transition: $target $duration $type;
+}
